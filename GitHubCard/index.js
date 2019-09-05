@@ -27,11 +27,11 @@ github info! You will need to understand the structure of this
   create a new component and add it to the DOM as a child of .cards
   */
 const followersArray = [ 
-  "tetondan",
-  "dustinmyers",
-  "justsml", 
-  "luishrd", 
-  "bigknell",
+  'tetondan',
+  'dustinmyers',
+  'justsml',
+  'luishrd',
+  'bigknell',
 ];
 
 /* Step 5: Now that you have your own card getting added to the DOM, either 
@@ -49,11 +49,6 @@ followersArray.forEach(follower => {
 
         .then(response => {
           cards.appendChild(cardCreator(response.data));
-        })
-
-        .catch(error => {
-          // error is what the promise rejected to (what it looks like depends on axios)
-          document.body.innerText = error.message;
         })
         
 });
